@@ -1,0 +1,47 @@
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
+import styled from 'styled-components'
+
+const QuoteContainer = styled.div`
+    position: fixed;
+    text-align:center;
+    bottom: 0%;
+    width: 600px;
+    left: 50%;
+    margin-left: -300px;
+
+    @media screen and (max-width: 600px) {
+        width: 350px;
+        margin-left: -175px;
+    }
+`
+
+const Text = styled.p`
+    font-size: 1.2rem;
+    color:#fff;
+`
+
+const url = 'https://goquotes-api.herokuapp.com/api/v1/random?count=1'
+
+const Quote = () => {
+    const [data, setData] = useState(null)
+
+    useEffect(() => {
+        axios.get(url).then((response) => {
+            setData(response.data)
+        }).catch((error) => {
+            console.log(error)
+        })
+    }, [])
+
+    if (!data) return null
+
+    return (
+        <QuoteContainer>
+            <Text>{data.quotes[0].text}</Text>
+            <Text>-{data.quotes[0].author}</Text>
+        </QuoteContainer>
+    )
+}
+
+export default Quote
