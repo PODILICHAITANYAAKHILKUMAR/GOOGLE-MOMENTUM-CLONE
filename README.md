@@ -1,6 +1,6 @@
-#Google Momentum Clone using React.
+ # Google Momentum Clone using React.
 
-##Packages used : 
+ ## Packages used : 
 1.axios (to fetch quote,temperature)
 2.styled-components (to fetch time)
 3.react-moment (to style our components)
