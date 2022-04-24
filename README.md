@@ -1,12 +1,17 @@
 Google Momentum Clone using React.
 
 Packages used : 
-1.axios
-2.styled-components
-3.momentum
-4.
+1.axios (to fetch quote,temperature)
+2.styled-components (to fetch time)
+3.react-moment (to style our components)
 
-In this project, we use axios to fetch quote,temperature. We use momentum 
+
+API's used:
+1.https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}   (to fetch weather).
+2.https://goquotes-api.herokuapp.com/api/v1/random?count=1  (to fetch random quotes).
+
+
+You can freely modify the files as per your requirements. You can also use any random api to fetch background-images.
 
 # Getting Started with Create React App
 
