@@ -11,7 +11,7 @@ API's used:
 2.https://goquotes-api.herokuapp.com/api/v1/random?count=1  (to fetch random quotes).
 
 
-You can freely modify the files as per your requirements. You can also use any random api to fetch background-images.
+Feel free to modify the files as per your requirements.You can also use any random api to fetch background-images.
 
 # Getting Started with Create React App
 
