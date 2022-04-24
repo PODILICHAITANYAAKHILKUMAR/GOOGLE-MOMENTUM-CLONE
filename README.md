@@ -6,7 +6,7 @@
 3.react-moment (to style our components)
 
 
-##API's used:
+## API's used:
 1.https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}   (to fetch weather).
 2.https://goquotes-api.herokuapp.com/api/v1/random?count=1  (to fetch random quotes).
 
